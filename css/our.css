@@ -69,6 +69,35 @@ main{
     width: 100%;
     height: calc(100% - 80px);
     background-color: white;
+
+    display: flex;
+}
+
+#cardtop-left{
+    flex: 1;
+    width: 40%;
+    padding: 20px;
+    
+}
+
+#cardtop-left img{
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block; /* explain why this makes it center */
+    border-radius: 253px;
+    border: 2px solid #dfdfdf;
+}
+
+#cardtop-right{
+    flex: 1;
+    width: 60%;
+    padding: 10px;
+}
+
+h1{
+    color: #000;
 }
 
 #cardbottom{
@@ -76,4 +105,24 @@ main{
     width: 100%;
     height: 80px;
     background-color: #06cb79;
+
+    display: flex;
+}
+
+#cardbottom ul{
+    margin: 0 auto 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 50%;
+    padding: 0;
+    list-style: none;
+}
+
+#cardbottom ul li{
+    flex: 1;
+    text-align: center;
 }
